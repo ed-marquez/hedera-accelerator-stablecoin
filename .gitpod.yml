@@ -8,15 +8,15 @@ tasks:
   - init: |
       npm install
       cd web && mv .env.sample .env
-      echo "# Log level for the application. The default value is ERROR." > web/.env
-      echo "# Acceptable values are ERROR, WARN, INFO, HTTP, VERBOSE, DEBUG and SILLY in order of priority (highest to lowest)." >> web/.env
-      echo "REACT_APP_LOG_LEVEL=ERROR" >> web/.env
-      echo "# JSON array with a factory id in Hedera format 0.0.XXXXX per environment." >> web/.env
-      echo "REACT_APP_FACTORIES='[{\"Environment\":\"testnet\",\"STABLE_COIN_FACTORY_ADDRESS\":\"0.0.467235\"}]'" >> web/.env
-      echo "# The var must be a unique mirror node service for Hedera network, and this is the service which would be used when the UI starts. If the service doesn't require an API key to authorize requests, the API_KEY and HEADER properties must remain empty." >> web/.env
-      echo "REACT_APP_MIRROR_NODE='[{\"Environment\":\"testnet\",\"BASE_URL\":\"https://testnet.mirrornode.hedera.com/api/v1/\", \"API_KEY\": \"\", \"HEADER\": \"\"}]'" >> web/.env
-      echo "# The var must be a unique RPC node service for Hedera network, and this is the service which would be used when the UI starts. If the service doesn't require an API key to authorize requests, the API_KEY and HEADER properties must remain empty." >> web/.env
-      echo "REACT_APP_RPC_NODE='[{\"Environment\":\"testnet\",\"BASE_URL\":\"https://testnet.hashio.io/api\", \"API_KEY\": \"\", \"HEADER\": \"\"}]'" >> web/.env
-      echo "# This is a proprietary Create React App configuration. You can read more information in its documentation.[Create React App documentation](https://create-react-app.dev/docs/advanced-configuration/)" >> web/.env
-      echo "GENERATE_SOURCEMAP=false" >> web/.env
+      echo "# Log level for the application. The default value is ERROR." > .env
+      echo "# Acceptable values are ERROR, WARN, INFO, HTTP, VERBOSE, DEBUG and SILLY in order of priority (highest to lowest)." >> .env
+      echo "REACT_APP_LOG_LEVEL=ERROR" >> .env
+      echo "# JSON array with a factory id in Hedera format 0.0.XXXXX per environment." >> .env
+      echo "REACT_APP_FACTORIES='[{\"Environment\":\"testnet\",\"STABLE_COIN_FACTORY_ADDRESS\":\"0.0.467235\"}]'" >> .env
+      echo "# The var must be a unique mirror node service for Hedera network, and this is the service which would be used when the UI starts. If the service doesn't require an API key to authorize requests, the API_KEY and HEADER properties must remain empty." >> .env
+      echo "REACT_APP_MIRROR_NODE='[{\"Environment\":\"testnet\",\"BASE_URL\":\"https://testnet.mirrornode.hedera.com/api/v1/\", \"API_KEY\": \"\", \"HEADER\": \"\"}]'" >> .env
+      echo "# The var must be a unique RPC node service for Hedera network, and this is the service which would be used when the UI starts. If the service doesn't require an API key to authorize requests, the API_KEY and HEADER properties must remain empty." >> .env
+      echo "REACT_APP_RPC_NODE='[{\"Environment\":\"testnet\",\"BASE_URL\":\"https://testnet.hashio.io/api\", \"API_KEY\": \"\", \"HEADER\": \"\"}]'" >> .env
+      echo "# This is a proprietary Create React App configuration. You can read more information in its documentation.[Create React App documentation](https://create-react-app.dev/docs/advanced-configuration/)" >> .env
+      echo "GENERATE_SOURCEMAP=false" >> .env
     command: npm start
